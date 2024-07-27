@@ -1,0 +1,78 @@
+name: ecommerce_app
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  iconsax: ^0.0.8
+  get: ^4.5.6
+
+  # Utility Packages
+  http: ^1.1.0
+  intl: ^0.18.1
+  logger: ^2.0.1
+  url_launcher: ^6.1.12
+
+  # State Management
+  get_storage: ^2.1.1
+
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.10+1
+  flutter_native_splash: ^2.4.0
+  smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
+  readmore: ^3.0.0
+  flutter_rating_bar: ^4.0.1
+  firebase_core: ^2.1.1  # Update to a compatible version
+  firebase_auth: ^4.2.0  # Ensure compatibility with firebase_core
+  hive: ^2.2.3
+  fpdart: ^1.1.0
+  get_it: ^7.7.0
+  flutter_bloc: ^8.1.6
+  connectivity_plus: ^6.0.3
+  cloud_firestore: ^4.17.5
+  google_sign_in: ^6.2.1
+  firebase_storage: ^11.7.7
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  assets:
+    - assets/icons/
+    - assets/fonts/
+    - assets/logo/
+    - assets/PromotionBanners/
+    - assets/categories/clothing/
+    - assets/categories/Shoes/
+    - assets/categories/Sports/
+    - assets/categories/Electronics/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 800
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 400
+  uses-material-design: true
