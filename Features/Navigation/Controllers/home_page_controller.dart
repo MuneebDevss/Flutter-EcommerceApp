@@ -1,0 +1,105 @@
+import 'package:get/get.dart';
+
+import '../../../Core/Entities/product.dart';
+
+class HomePageController extends GetxController{
+  static var page=0.obs;
+  List<Product> products = [
+    Product(
+      
+      subCategory: 'Sofa',
+      imageUrl: ['https://meeshan.com/cdn/shop/files/abt_882678137352502334MjE1MDY5.jpg-l.jpg?v=1717055645&width=1500',
+        'https://meeshan.com/cdn/shop/files/WhatsAppImage2024-05-29at6.13.57PM_1.jpg?v=1717055698&width=1500',
+      'https://meeshan.com/cdn/shop/files/WhatsAppImage2024-05-29at6.13.57PM.jpg?v=1717055698&width=1500',],
+      category: 'Furniture',
+      description: 'A comfortable leather sofa.',
+      sizes: ['Large'],
+      colors: ['brown', 'black'],
+      off: '10.0',
+
+      title: 'Leather Sofa',
+      brand: 'Meeshan',
+      price: 499.99,
+      likes: 120, id: '11',
+    ),
+    Product(
+      subCategory: 'T-Shirt',
+      imageUrl: ['https://www.oxford.com.pk/cdn/shop/files/DGreen_1_9ec44b9a-c158-45e5-aada-78449c2d3e3a.jpg?v=1686925108&width=600',
+        'https://www.oxford.com.pk/cdn/shop/files/DGreen_2_debaec04-9d8d-4319-98f3-cd99e9b079c2.jpg?v=1686925107&width=600',
+      'https://www.oxford.com.pk/cdn/shop/files/Purple_1_3e76c2ae-743e-45f5-b56c-e8a7c37e7537.jpg?v=1686925154&width=600',
+      'https://www.oxford.com.pk/cdn/shop/files/Beige_1_1d6a5089-38c8-4b7a-b0de-b7a8c0770751.jpg?v=1690872164&width=600'],
+      category: 'Clothing',
+      description: 'Regular round neck T-Shirt with short sleeves made with fine breathable cotton.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['brown', 'blue', 'black'],
+      off: '15.0',
+      title: 'Cotton T-Shirt',
+      brand: 'Fashion Hub',
+      price: 19.99,
+      likes: 0, id: '12',
+    ),
+    Product(
+      subCategory: 'Smartphone',
+      imageUrl: ['https://images.samsung.com/is/image/samsung/assets/pk/smartphones/galaxy-s24-ultra/buy/01_S24Ultra-Group-KV_PC.jpg?imbypass=true',
+        'https://images.samsung.com/is/image/samsung/assets/pk/smartphones/socialimage/02_S24Ultra-Group-KV_Exclusive-P.jpg?imbypass=true',
+        'https://images.samsung.com/is/image/samsung/assets/pk/smartphones/galaxy-s24-ultra/buy/03_S24Ultra-GalaxyAI-KV_PC.jpg?imbypass=true'
+      ],
+      category: 'Electronics',
+      description: 'A high-end smartphone with latest features.',
+      sizes: ['128GB', '256GB'],
+      colors: ['silver', 'black'],
+      off: '5',
+      title: 'Galaxy S24 Ultra',
+      brand: 'Samsung',
+      price: 1419.99,
+      likes: 0, id: '13',
+    ),
+  Product(
+  subCategory: 'DressShoes',
+  category: 'Shoes',
+  description: 'Premium leather shoes for business wear.',
+  sizes: ['7', '8', '9'],
+  colors: [
+  'black',
+  'brown',
+  'blue',
+  ],
+  title: 'Cap Toe Oxford',
+  brand: 'Johnston & Murphy',
+  price: 220,
+  likes: 0,
+  imageUrl: ['https://www.carminashoemaker.com/cdnassets/captoe_oxfords_tan_boxcalf_80386_l.jpg',
+  'https://www.carminashoemaker.com/cdnassets/captoe_oxfords_tan_boxcalf_80386_sadl.jpg',
+  'https://www.carminashoemaker.com/cdnassets/captoe_oxfords_tan_boxcalf_80386_fadl.jpg'], id: '14',
+  ),
+    Product(
+      subCategory: 'Watch',
+      imageUrl: ['https://static-01.daraz.pk/p/f6fea4400e8c3132a7945b4e56c7d8ba.png_750x750.jpg_.webp',
+        'https://static-01.daraz.pk/p/f6fea4400e8c3132a7945b4e56c7d8ba.png_750x750.jpg_.webp',
+        'https://static-01.daraz.pk/p/4c750054e8b8aaa45a66539cd1256fc4.png_750x750.jpg_.webp'
+      ],
+      category: 'Accessories',
+      description: 'Zero 2.01" TFT HD Display Infinity Smart Watch, BT Calling, 100+ Watch Faces & Sports Modes, 7 Days Battery, Silver Chain.',
+      sizes: ['One Size'],
+      colors: ['black', 'silver'],
+      off: '25.0',
+      title: 'Digital Watch',
+      brand: 'Zero',
+      price: 49.99,
+      likes: 0, id: '15',
+    ),
+    Product(
+      subCategory: 'Laptop',
+      imageUrl: ['https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08867130.png'],
+      category: 'Electronics',
+      description: 'A powerful laptop for all your computing needs.',
+      sizes: ['13-inch', '15-inch'],
+      colors: ['gray', 'black'],
+      off: '10.0',
+      title: 'OMEN TRANSCEND 14 GAMING LAPTOP',
+      brand: 'Omen',
+      price: 1199.99,
+      likes: 340, id: '16',
+    ),
+  ];
+}
